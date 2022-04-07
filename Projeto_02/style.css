@@ -1,0 +1,123 @@
+/*Margin prenchimento interno
+  Padding prenchimento externo
+
+body{
+  margin: 0px;
+}
+.page{
+  border: 1px solid red;
+  padding: 88px;
+  margin: 80px;
+}
+*/
+
+body{
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  /*linear gradient (x deg = como vai ser a rotação rgbAlpha, r,g,b, transparencia/opacidade)*/
+  background: linear-gradient(180deg, rgba(227,255,248,0) 80%, rgba(227,255,248,0.38) 100% );
+  min-height: 100vh;
+}
+
+.page{
+  width: 1000px;
+  margin: 65px auto 0px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 48px;
+  list-style: none;
+  font-family: 'Mulish', sans-serif;
+}
+ul li a{
+  color: #1f1534;
+  text-decoration: none;
+  opacity: 0.5;
+}
+/*Pseudo-class
+qd tiver  "hover" sempre que o mouse passar em cima causa o efeito
+*/
+
+ul li a:hover{
+  font-weight: bold;
+  opacity: 1;
+}
+
+h1{
+  font-family: 'Mulish', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  color: #1F1534;
+  font-weight: normal;
+  /*Forma de quebrar linha*/
+  width: 490px;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 span{
+  color: #89C5cc;
+  font-weight: bold;
+}
+
+section p{
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+  margin: 40px 0;
+}
+
+button{
+  display: flex;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  padding: 14px 32px 15px;
+  border-radius: 4px;
+  background-color: #69B99D;
+  color: white;
+  border-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #648a7d;
+}
+
+footer{
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+footer a{
+  font-weight: bold;
+  text-decoration: none;
+  color: #1F1534;
+}
+
+#balls{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  
+}
